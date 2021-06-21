@@ -1,4 +1,4 @@
-package com.ymj.test02_deadlock;
+package com.ymj.bfbcys.test02_deadlock;
 
 
 /**

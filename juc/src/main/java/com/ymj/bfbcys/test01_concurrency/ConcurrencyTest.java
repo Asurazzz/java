@@ -1,4 +1,4 @@
-package com.ymj.test01_concurrency;
+package com.ymj.bfbcys.test01_concurrency;
 
 /**
  * @Classname ConcurrencyTest
