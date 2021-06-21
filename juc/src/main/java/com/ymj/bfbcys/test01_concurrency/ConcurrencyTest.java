@@ -28,7 +28,7 @@ public class ConcurrencyTest {
                 }
             }
         });
-        // 为什么使用lamda表达式速度会变慢
+        // 为什么使用lamda表达式速度会变慢？
 //        Thread thread = new Thread(() -> {
 //            int a = 0;
 //            for (long i = 0; i < count; i++) {

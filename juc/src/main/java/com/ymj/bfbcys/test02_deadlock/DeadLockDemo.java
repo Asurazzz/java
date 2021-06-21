@@ -3,7 +3,7 @@ package com.ymj.bfbcys.test02_deadlock;
 
 /**
  * @Classname DeadLockDemo
- * @Description TODO
+ * @Description
  * @Date 2021/5/31 15:51
  * @Created by yemingjie
  */
