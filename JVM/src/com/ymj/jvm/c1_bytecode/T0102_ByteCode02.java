@@ -1,4 +1,4 @@
-package com.ymj.jvm.bytecode;
+package com.ymj.jvm.c1_bytecode;
 
 /**
  * @author : yemingjie
