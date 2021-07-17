@@ -6,12 +6,15 @@ package com.ymj.study.code10_threadlocal;
  */
 public class ThreadLocalDemo {
 
-    static ThreadLocal<Integer> num = new ThreadLocal<Integer>() {
-        @Override
-        protected Integer initialValue() {
-            return 0;
-        }
-    };
+//    static ThreadLocal<Integer> num = new ThreadLocal<Integer>() {
+//        @Override
+//        protected Integer initialValue() {
+//            return 0;
+//        }
+//    };
+
+
+    static ThreadLocal<Integer> num = ThreadLocal.withInitial(() -> 0);
 
     // 每个线程的变量副本是如何存储的？
     // ThreadLocal是什么时候设置初始化的？
