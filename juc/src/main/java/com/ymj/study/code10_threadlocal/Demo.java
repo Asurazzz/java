@@ -10,6 +10,7 @@ public class Demo {
 
     public static void main(String[] args) {
         magicHash(16);
+        magicHash(32);
     }
 
     private static void magicHash(int size) {
