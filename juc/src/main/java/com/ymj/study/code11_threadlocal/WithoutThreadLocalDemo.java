@@ -1,4 +1,4 @@
-package com.ymj.study.code10_threadlocal;
+package com.ymj.study.code11_threadlocal;
 
 /**
  * @author : yemingjie
