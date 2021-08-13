@@ -7,6 +7,7 @@ package com.ymj.jvm01.c4_code;
  * @Created by yemingjie
  */
 public class TestClinit02 {
+
     static class Parent {
         public static int A = 1;
 
