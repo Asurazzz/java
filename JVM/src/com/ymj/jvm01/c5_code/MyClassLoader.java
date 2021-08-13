@@ -25,7 +25,7 @@ public class MyClassLoader extends ClassLoader {
 
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
-        //1.字节码路径
+        // 1.字节码路径
         String fileName = codePath + name + ".class";
         // 2.获取输入流
         // 3.获取输出流
