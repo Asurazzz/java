@@ -7,8 +7,8 @@ package com.ymj.jvm01.c4_code;
  * @Created by yemingjie
  */
 public class B {
-//    public static void main(String[] args) {
-//        int a;
-//        System.out.println(a);
-//    }
+    public static void main(String[] args) {
+        int a;
+        //System.out.println(a);
+    }
 }
