@@ -4,6 +4,13 @@ package com.ymj.jvm01.c7_code;
  * @author : yemingjie
  * @date : 2021/8/17 22:31
  */
+
+/**
+ * jps -q 显示进程id
+ * jps -l 输出jar包路径，类全名
+ * jps -m 输出主类名,及传入main方法的参数
+ * jps -v 输出主类名,及输出JVM参数
+ */
 public class Demo1_Jps {
     public static void main(String[] args) {
         System.out.println("jps 指令");
