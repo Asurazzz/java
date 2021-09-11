@@ -16,6 +16,7 @@ public class ConcurrencyTest {
     public static void main(String[] args) throws InterruptedException {
         concurrency();
         serial();
+
     }
 
     private static void concurrency() throws InterruptedException {
