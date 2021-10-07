@@ -11,6 +11,7 @@ public class ExceptionTest {
 
         for (String key : hashMap.keySet()) {
             if ("1".equals(key)) {
+
                 hashMap.remove(key);
             }
         }
