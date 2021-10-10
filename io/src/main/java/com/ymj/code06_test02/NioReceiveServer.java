@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class NioReceiveServer {
     /**
-     * 接受文件路径
+     *  接受文件路径
      */
     private static final String  RECEIVE_PATH = NioDemoConfig.SOCKET_RECEIVE_PATH;
 
