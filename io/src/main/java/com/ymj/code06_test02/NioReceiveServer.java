@@ -11,7 +11,8 @@ import java.util.Map;
 
 public class NioReceiveServer {
     /**
-     *  接受文件路径
+     * 接受文件路径
+     *
      */
     private static final String  RECEIVE_PATH = NioDemoConfig.SOCKET_RECEIVE_PATH;
 
@@ -40,8 +41,8 @@ public class NioReceiveServer {
     }
 
     private ByteBuffer buffer = ByteBuffer.allocate(NioDemoConfig.SERVER_BUFFER_SIZE);
-    // 使用 Map 保存每个客户端传输
-    // 当 OP_READ 通道可读时，根据 channel 找到对应的对象
+    //使用 Map 保存每个客户端传输
+    //当 OP_READ 通道可读时，根据 channel 找到对应的对象
     Map<SelectableChannel, Client> clientMap = new HashMap<>();
     public void startServer() throws IOException {
         ServerSocketChannel serverChannel = ServerSocketChannel.open();
