@@ -13,6 +13,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class EchoClient {
+
     public static void main(String[] args) throws IOException {
         new EchoClient().start();
     }
