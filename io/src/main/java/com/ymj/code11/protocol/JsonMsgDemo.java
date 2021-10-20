@@ -9,7 +9,10 @@ public class JsonMsgDemo {
         return user;
     }
 
-    //测试用例：序列化 serialization &反序列化 Deserialization
+    /**
+     * 测试用例：序列化 serialization &反序列化 Deserialization
+     * @param args
+     */
     public static void main(String[] args) {
         JsonMsg msg = buildMsg();
         //将 POJO 对象，序列化成字符串
