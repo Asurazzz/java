@@ -13,7 +13,7 @@ package ymj.jvm02;
  * -XX:+PrintGCTimeStamps
  * -Xloggc:gc.log
  */
-public class Test {
+public class YoungGCTest {
     public static void main(String[] args) {
         byte[] array1 = new byte[1024 * 1024];
         array1 = new byte[1024 * 1024];
