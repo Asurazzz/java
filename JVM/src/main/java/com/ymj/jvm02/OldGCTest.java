@@ -1,4 +1,4 @@
-package ymj.jvm02;
+package com.ymj.jvm02;
 
 /**
  * -XX:NewSize=10485760
