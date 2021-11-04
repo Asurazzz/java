@@ -12,7 +12,7 @@ public class TestHeap {
         List<Object> list = new ArrayList<>();
         while (true) {
             list.add(new Object());
-            System.out.println("当前创建了第" + counter + "个对象");
+            System.out.println("当前创建了第" + (counter) + "个对象");
         }
     }
 }
