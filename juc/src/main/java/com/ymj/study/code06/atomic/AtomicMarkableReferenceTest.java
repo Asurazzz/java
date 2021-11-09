@@ -14,21 +14,21 @@ public class AtomicMarkableReferenceTest {
 
     private static Thread t1 = new Thread(() -> {
         boolean mark = amRef.isMarked();
-        System.out.println("线程T1：修改前标志 Mrak:" + mark + "....");
+        System.out.println("线程T1：修改前标志 Mark:" + mark + "....");
         // 将值更新为200
         System.out.println("线程T1：100 --> 200.... 修改后返回值 Result:" + amRef.compareAndSet(amRef.getReference(), 200, mark, !mark));
     });
 
     private static Thread t2 = new Thread(() -> {
         boolean mark = amRef.isMarked();
-        System.out.println("线程T2：修改前标志 Mrak:" + mark + "....");
+        System.out.println("线程T2：修改前标志 Mark:" + mark + "....");
         // 将值更新回100
         System.out.println("线程T2：200 --> 100.... 修改后返回值 Result:" + amRef.compareAndSet(amRef.getReference(), 100, mark, !mark));
     });
 
     private static Thread t3 = new Thread(() -> {
         boolean mark = amRef.isMarked();
-        System.out.println("线程T3：休眠前标志 Mrak:" + mark + "....");
+        System.out.println("线程T3：休眠前标志 Mark:" + mark + "....");
         try {
             TimeUnit.SECONDS.sleep(1);
         } catch (InterruptedException e) {
