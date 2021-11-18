@@ -1,4 +1,4 @@
-package com.ymj;
+package com.ymj.test;
 
 public class Main {
     public static void main(String[] args) throws Exception {

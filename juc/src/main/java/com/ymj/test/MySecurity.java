@@ -1,4 +1,4 @@
-package com.ymj;
+package com.ymj.test;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;

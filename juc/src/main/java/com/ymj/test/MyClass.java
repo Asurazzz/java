@@ -1,4 +1,4 @@
-package com.ymj;
+package com.ymj.test;
 
 public class MyClass {
     public synchronized void method1() {

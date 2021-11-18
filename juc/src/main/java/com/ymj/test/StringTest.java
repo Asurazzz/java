@@ -1,4 +1,4 @@
-package com.ymj;
+package com.ymj.test;
 
 public class StringTest {
     public static void main(String[] args) {
