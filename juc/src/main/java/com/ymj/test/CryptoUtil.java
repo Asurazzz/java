@@ -185,7 +185,7 @@ public class CryptoUtil {
 
     public static void main(String[] args) {
         //加密
-        String m = encrypt("15868861259_1637129302105");
+        String m = encrypt("15700184617_1637303782040");
         System.out.println("加密结果："+m);
         //解密
         String n = decrypt(m);
