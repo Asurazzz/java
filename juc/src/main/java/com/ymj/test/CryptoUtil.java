@@ -1,5 +1,7 @@
 package com.ymj.test;
 
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
@@ -39,13 +41,16 @@ public class CryptoUtil {
         if (key == null) {
             return DEFAULT_KEY;
         }
+        SecureRandom secureRandom = null;
         KeyGenerator generator = null;
         try {
+            secureRandom = SecureRandom.getInstance("SHA1PRNG");
+            secureRandom.setSeed(key.getBytes(StandardCharsets.UTF_8));
             generator = KeyGenerator.getInstance(DES);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
-        generator.init(new SecureRandom(key.getBytes()));
+        generator.init(secureRandom);
         Key key1 = generator.generateKey();
         generator = null;
         return key1;
@@ -185,11 +190,15 @@ public class CryptoUtil {
 
     public static void main(String[] args) {
         //加密
-        String m = encrypt("15700184617_1637303782040");
+        String m = encrypt("15700184617_1638755263641");
         System.out.println("加密结果："+m);
         //解密
-        String n = decrypt(m);
+        String n = decrypt("BZ5YLPLKKU7ISQEG2VK3L5SN65CU3YBFEWB2P3I45SWORRP3VC6V7SWJV2NIZDIEYG3LASOKMGPPM");
         System.out.println("解密结果："+n);
+
+
+        Integer i = 1;
+        System.out.println(1 == i);
 
     }
 
