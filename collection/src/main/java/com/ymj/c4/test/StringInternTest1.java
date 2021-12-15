@@ -1,6 +1,6 @@
 package com.ymj.c4.test;
 
-public class StringInterTest {
+public class StringInternTest1 {
     public static void main(String[] args) {
 
         String h = new String("cc");
