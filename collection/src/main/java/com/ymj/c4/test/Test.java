@@ -95,11 +95,15 @@ public class Test {
 //        String s11 = "计算机";
 //        System.out.println(s10.intern() == s11);
 
-        String s10 = new String("计算1") + new String("机1");
-        // System.out.println(s10.intern() == s10);
-        String s11 = "计算1机1";
-        System.out.println(s11.intern() == s10);
+//        String s10 = new String("计算1") + new String("机1");
+//        // System.out.println(s10.intern() == s10);
+//        String s11 = "计算1机1";
+//        System.out.println(s11.intern() == s10);
 
+
+        String s1 = new String("ab") + new String("c");
+        String s2 = "abc";
+        System.out.println(s1.intern() == s2);
 
     }
 }
