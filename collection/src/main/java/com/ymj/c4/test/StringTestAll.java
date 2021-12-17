@@ -12,19 +12,32 @@ public class StringTestAll {
 //        System.out.println(s1 == s2);
 
 //        String s1 = new String("ab") + new String("c");
-//        String s2 = "abc";
-//        System.out.println(s1 == s2);
-
-//        String s1 = new String("abc");
-//        System.out.println(s1.intern() == s1);
-
-//        String s1 = new String("ab") + new String("c");
-//        System.out.println(s1.intern() == s1);
-
-//        String s1 = new String("abc");
+//        System.out.println(System.identityHashCode(s1));
 //        s1.intern();
+//        System.out.println(System.identityHashCode(s1));
 //        String s2 = "abc";
+//        System.out.println(System.identityHashCode(s2));
 //        System.out.println(s1 == s2);
+
+//        String s1 = new String("abc");
+//        System.out.println(s1.intern() == s1);
+
+//        ///String s1 = new String("ab") + new String("c");
+//        String s1 = new String("abc");
+//
+//        String s2= "abc";
+//        //System.out.println(s1.intern() == s1);
+//        System.out.println(s1.intern() == s2);
+
+        String s1 = new String("abc");
+        System.out.println(System.identityHashCode(s1));
+        s1.intern();
+        System.out.println(System.identityHashCode(s1));
+        String s2 = "abc";
+        System.out.println(System.identityHashCode(s2));
+        System.out.println(s1 == s2);
+        //System.out.println(s1.intern() == s2);
+
 //        System.out.println(s1.intern() == s2);
 //        System.out.println(s2.intern() == s1);
 
@@ -38,19 +51,20 @@ public class StringTestAll {
 //        String s1 = new String("ab") + new String("c");
 //        //s1.intern();
 //        String s2 = "abc";
-//        //s1.intern();
-//        //System.out.println(s1.intern() == s1);
-//        //System.out.println(s1.intern() == s2);
+//        s1.intern();
+//        System.out.println(s1 == s2.intern());
+//        System.out.println(s1.intern() == s1);
+//        System.out.println(s1.intern() == s2);
 //        System.out.println(s1 == s2.intern());
 
 
 
 //        // s1.intern的位置对结果没有影响
 //        String s1 = new String("abc");
-//        //s1.intern();
+//        s1.intern();
 //        String s2 = "abc";
 //        System.out.println(s1 == s2);
-//        System.out.println(s1.intern() == s1);
+//        //System.out.println(s1.intern() == s1);
 
 
     }
