@@ -13,6 +13,7 @@
         <module>io</module>
         <module>collection</module>
         <module>JVM</module>
+        <module>base</module>
     </modules>
 
     <properties>

@@ -1,5 +1,8 @@
-package ymj.code09_test;
+package com.ymj.code09_test;
 
+/**
+ * @author admin
+ */
 public class Test {
     public static int aMethod(int i)throws Exception {
         try{

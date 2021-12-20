@@ -6,7 +6,7 @@ package com.ymj.code03_rmi;
  * @Date 2021/6/10 10:30
  * @Created by yemingjie
  */
-public class SayServiceImpl implements ISayService{
+public class SayServiceImpl implements ISayService {
     @Override
     public String say(String name) throws Exception {
         System.out.println(name + " say : hello2");

@@ -1,4 +1,4 @@
-package ymj.code09_test;
+package com.ymj.code09_test;
 
 public class HelloB extends HelloA{
     public HelloB() {

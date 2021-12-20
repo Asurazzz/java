@@ -16,9 +16,9 @@ public class ServiceMain {
 
     public static void main(String[] args) throws RemoteException {
         // 实例化要暴露给远程的方法/接口
-        ISayService impl = new SayServiceImpl();
+        com.ymj.code03_rmi.ISayService impl = new com.ymj.code03_rmi.SayServiceImpl();
         // 开启本地服务
-        ISayService sayService = (ISayService) UnicastRemoteObject.exportObject(impl, 666);
+        com.ymj.code03_rmi.ISayService sayService = (com.ymj.code03_rmi.ISayService) UnicastRemoteObject.exportObject(impl, 666);
         // 服务注册中心
         Registry registry = LocateRegistry.createRegistry(999);
         // 注册服务

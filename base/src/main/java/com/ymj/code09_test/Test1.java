@@ -1,4 +1,4 @@
-package ymj.code09_test;
+package com.ymj.code09_test;
 
 public class Test1 {
     public static Test1 t1 = new Test1();
