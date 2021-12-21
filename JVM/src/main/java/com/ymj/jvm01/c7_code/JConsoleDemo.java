@@ -23,7 +23,7 @@ public class JConsoleDemo {
         System.gc();
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         fillHeap(1000);
         Thread.sleep(10000);
     }
