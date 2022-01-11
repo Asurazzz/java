@@ -33,5 +33,6 @@ public class LeeMain {
         thread1.join();
         thread2.join();
         System.out.println(count);
+        System.out.println(count);
     }
 }
