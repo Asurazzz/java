@@ -100,7 +100,7 @@ public class PrintABC {
     }
 
     public static void main(String[] args) {
-        PrintABC printABC = new PrintABC(10);
+        PrintABC printABC = new PrintABC(15);
         printABC.printABC();
     }
 
