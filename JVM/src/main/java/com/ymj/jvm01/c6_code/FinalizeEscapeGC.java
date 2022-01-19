@@ -23,7 +23,7 @@ public class FinalizeEscapeGC {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        SAVE_HOOK = new FinalizeEscapeGC();
+        //SAVE_HOOK = new FinalizeEscapeGC();
         // 对象第一次拯救自己
         SAVE_HOOK = null;
         System.gc();
