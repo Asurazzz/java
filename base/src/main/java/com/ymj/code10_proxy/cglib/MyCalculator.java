@@ -3,6 +3,7 @@ package com.ymj.code10_proxy.cglib;
 public class MyCalculator {
 
     public int add(int i, int j) {
+
         int result = i + j;
         return result;
     }
