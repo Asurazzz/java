@@ -10,6 +10,7 @@ import java.lang.reflect.Proxy;
 public class CalculatorProxy {
 
     public static Calculator getProxy(Calculator calculator) {
+
         Calculator c = (Calculator) Proxy.newProxyInstance(
                 calculator.getClass().getClassLoader(),
                 calculator.getClass().getInterfaces(), ((proxy, method, args) -> {
