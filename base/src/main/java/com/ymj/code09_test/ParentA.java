@@ -4,6 +4,7 @@ public class ParentA {
     static {
         System.out.println("1");
     }
+
     {
         System.out.println("aaaaa");
     }
