@@ -24,7 +24,7 @@ class SonB extends ParentA {
     }
 
     public static void main(String[] args) {
-        // 1 a aaaa 2
+        // 1 a aaaa 2 
         ParentA ab = new ParentA();
         ab = new SonB(); // 1 a aaaa 2 aaaa 2 b
     }
