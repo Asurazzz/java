@@ -11,14 +11,16 @@ public class Huiwen {
     public static void main(String[] args) {
         int num = 11;
         while (true) {
-            if (String.valueOf(num).equals(new StringBuffer(String.valueOf(num)).reverse())
-                    && Integer.toBinaryString(num).equals(new StringBuffer(Integer.toBinaryString(num)).reverse())
-                    && Integer.toOctalString(num).equals(new StringBuffer(Integer.toOctalString(num)).reverse() )) {
+            if (Integer.parseInt(String.valueOf(num)) == Integer.parseInt(new StringBuffer(String.valueOf(num)).reverse().toString())
+                    && Integer.parseInt(Integer.toBinaryString(num)) == Integer.parseInt(new StringBuffer(Integer.toBinaryString(num)).reverse().toString())
+                    && Integer.parseInt(Integer.toOctalString(num)) == Integer.parseInt(new StringBuffer(Integer.toOctalString(num)).reverse().toString())) {
 
                 System.out.println(num);
+                System.out.println(Integer.toBinaryString(num) + "---" + Integer.parseInt(new StringBuffer(Integer.toBinaryString(num)).reverse().toString()));
+                System.out.println(Integer.parseInt(Integer.toOctalString(num)) + "---" + Integer.parseInt(new StringBuffer(Integer.toOctalString(num)).reverse().toString()));
                 break;
             }
-            num+=2;
+            num += 2;
         }
     }
 }
