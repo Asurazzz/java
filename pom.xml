@@ -14,6 +14,7 @@
         <module>collection</module>
         <module>JVM</module>
         <module>base</module>
+        <module>designpattern</module>
     </modules>
 
     <properties>
