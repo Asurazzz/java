@@ -16,7 +16,7 @@ public class Test {
         list.add(new BeforeMethodInterceptor());
         list.add(new AfterMethodInterceptor());
         list.add(new AroundMethodInterceptor());
-        //2、创建目标方法；
+        //2、创建目标方法
         TestService testService = new TestService();
         Method test = TestService.class.getMethod("test", String.class);
         Object[] params = {"Hello World!"};
