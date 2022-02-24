@@ -9,7 +9,7 @@ package com.ymj.responsibilitychain.code04_test;
 public interface MethodInterceptor {
 
     /**
-     * 定义共同通知的骨架
+     * 定义共同通知
      * @param methodInvocation
      */
     void invoke(MethodInvocation methodInvocation);
