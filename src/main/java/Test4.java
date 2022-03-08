@@ -21,17 +21,35 @@ public class Test4 {
         orders.add(order);
 
 
-        List<String> oidList = orders.stream().map(Order::getOid).map(String::valueOf).distinct().collect(Collectors.toList());
-
-        System.out.println(oidList);
-
-
+        List<String> oidList = new ArrayList<>();
         HashMap<Long, String> distributeStatusMap = new HashMap(16);
-        orders.forEach((item) -> distributeStatusMap.put(item.getOid(), item.getName()));
-
-        boolean isDistributor = orders.stream().anyMatch(item -> item.getName().equals("3"));
+        boolean isDistributor = false;
+        isDistributor = paserTest(isDistributor);
         System.out.println(isDistributor);
+//        parseTradeOrderToCjdf(orders, oidList, isDistributor, distributeStatusMap);
+//        System.out.println(oidList);
+//        System.out.println(distributeStatusMap);
+//        System.out.println(isDistributor);
 
 
+
+
+        // boolean isDistributor = orders.stream().anyMatch(item -> item.getName().equals("3"));
+
+
+    }
+
+    private static boolean paserTest(boolean isDistributor) {
+        isDistributor = true;
+        return isDistributor;
+    }
+
+    private static void parseTradeOrderToCjdf(List<Order> orders,
+                                       List<String> oidList,
+                                       boolean isDistributor,
+                                       HashMap<Long, String> distributeStatusMap) {
+        oidList = orders.stream().map(Order::getOid).map(String::valueOf).distinct().collect(Collectors.toList());
+        orders.forEach((item) -> distributeStatusMap.put(item.getOid(), item.getName()));
+        isDistributor = orders.stream().anyMatch(item -> item.getName().equals("1"));
     }
 }
