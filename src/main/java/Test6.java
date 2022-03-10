@@ -8,6 +8,16 @@ import java.util.List;
  */
 public class Test6 {
     public static void main(String[] args) {
+        int type = 3;
+//        if (!(type == 1 || type == 3)) {
+//            System.out.println("-----");
+//        }
+        if (type != 1 && type != 3) {
+            System.out.println("1111");
+        }
+        System.out.println("======");
+    }
+    public static void main2(String[] args) {
         List<String> list = new ArrayList<>();
         list.add("1");
         list.addAll(new ArrayList<>());
