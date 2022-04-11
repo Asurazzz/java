@@ -34,7 +34,6 @@ public class Test {
 
     private static List<DistributorManagerVo> toDistributorManageResponseVos(List<CjdfDistributorManage> lists) {
         List<DistributorManagerVo> voList = new ArrayList<>();
-
         //if (CollectionUtils.isNotEmpty(lists)) {
             voList = lists.stream().map(item -> {
                 DistributorManagerVo vo = new DistributorManagerVo();
