@@ -9,7 +9,6 @@ import java.util.Date;
  * @time 20:50.
  */
 public class CjdfDistributorManage implements Serializable {
-
     /**
      * 序列化ID
      */
@@ -32,7 +31,7 @@ public class CjdfDistributorManage implements Serializable {
      */
     private Integer enableStatus;
     /**
-     * 供货商平台ID
+     * 供应商平台ID
      */
     private Long supplierId;
     /**
@@ -40,7 +39,11 @@ public class CjdfDistributorManage implements Serializable {
      */
     private Long distributorId;
     /**
-     * 1：申请中 2：绑定成功 3：绑定失败
+     * 分销商平台名称
+     */
+    private String distributorName;
+    /**
+     * 绑定状态 1：申请中 2：绑定成功 3：绑定失败
      */
     private Integer bindStatus;
 
@@ -102,14 +105,14 @@ public class CjdfDistributorManage implements Serializable {
     }
 
     /**
-     * @return supplierId 供货商平台ID
+     * @return supplierId 供应商平台ID
      */
     public Long getSupplierId() {
         return supplierId;
     }
 
     /**
-     * @param supplierId 供货商平台ID
+     * @param supplierId 供应商平台ID
      */
     public void setSupplierId(Long supplierId) {
         this.supplierId = supplierId;
@@ -130,17 +133,32 @@ public class CjdfDistributorManage implements Serializable {
     }
 
     /**
-     * @return bindStatus 1：申请中 2：绑定成功 3：绑定失败
+     * @return distributorName 分销商平台名称
+     */
+    public String getDistributorName() {
+        return distributorName;
+    }
+
+    /**
+     * @param distributorName 分销商平台名称
+     */
+    public void setDistributorName(String distributorName) {
+        this.distributorName = distributorName;
+    }
+
+    /**
+     * @return bindStatus 绑定状态 1：申请中 2：绑定成功 3：绑定失败
      */
     public Integer getBindStatus() {
         return bindStatus;
     }
 
     /**
-     * @param bindStatus 1：申请中 2：绑定成功 3：绑定失败
+     * @param bindStatus 绑定状态 1：申请中 2：绑定成功 3：绑定失败
      */
     public void setBindStatus(Integer bindStatus) {
         this.bindStatus = bindStatus;
     }
+
 
 }
